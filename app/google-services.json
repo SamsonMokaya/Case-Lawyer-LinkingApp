@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "380946917474",
+    "project_id": "case-lawyer",
+    "storage_bucket": "case-lawyer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380946917474:android:9b8de74951216c0341093b",
+        "android_client_info": {
+          "package_name": "com.example.lawyer_case_allocation_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380946917474-vt0s6f4b96b0905crbqb9uvgego9rq7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW9zhZ9En_R8WYVxgSCX8AqcYSXt2clRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380946917474-vt0s6f4b96b0905crbqb9uvgego9rq7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
