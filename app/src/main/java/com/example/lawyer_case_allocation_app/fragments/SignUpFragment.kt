@@ -10,7 +10,6 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.lawyer_case_allocation_app.R
 import com.example.lawyer_case_allocation_app.databinding.FragmentSignUpBinding
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpFragment : Fragment() {
