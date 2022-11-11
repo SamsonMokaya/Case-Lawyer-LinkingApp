@@ -33,43 +33,24 @@ class SignUpFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         init(view)
-        registerEvents()
     }
 
     private fun init(view:View){
         navControl = Navigation.findNavController(view)
-        auth = FirebaseAuth.getInstance()
-    }
-
-    private fun registerEvents(){
-
         binding.textView5.setOnClickListener{
             navControl.navigate(R.id.action_signUpFragment_to_signInFragment)
         }
 
-        binding.authButton.setOnClickListener{
-            val email = binding.emailTI.text.toString().trim()
-            val pass = binding.passwordTI.text.toString().trim()
-            val verifyPass = binding.retypepasswordTI.toString().trim()
-
-            if(email.isNotEmpty() && pass.isNotEmpty() && verifyPass.isNotEmpty()){
-                if(pass == verifyPass){
-                    auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(
-                        OnCompleteListener {
-                            if(it.isSuccessful){
-                                Toast.makeText(context, "Registered Successfully", Toast.LENGTH_SHORT).show()
-                                navControl.navigate(R.id.action_signUpFragment_to_homeScreenFragment)
-                            }else{
-                                Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
-                            }
-                        }
-                    )
-                }
-            }
+        binding.button.setOnClickListener{
+            Toast.makeText(context, "Registered Successfully", Toast.LENGTH_SHORT).show()
+            navControl.navigate(R.id.action_signUpFragment_to_homeScreenFragment)
         }
+
     }
 
-}
+    }
+
+
 
 
 
