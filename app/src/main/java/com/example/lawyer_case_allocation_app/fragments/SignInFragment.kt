@@ -34,40 +34,19 @@ class SignInFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         init(view)
-        registerEvents()
     }
 
     private fun init(view:View){
         navControl = Navigation.findNavController(view)
-        auth = FirebaseAuth.getInstance()
-    }
-
-    private fun registerEvents(){
-
         binding.textView5.setOnClickListener{
-            navControl.navigate(R.id.action_signUpFragment_to_signInFragment)
+            navControl.navigate(R.id.action_signInFragment_to_signUpFragment)
+        }
+        binding.button.setOnClickListener{
+            Toast.makeText(context, "Signin Successful", Toast.LENGTH_SHORT)
+                .show()
+            navControl.navigate(R.id.action_signInFragment_to_homeScreenFragment)
         }
 
-        binding.authButton.setOnClickListener{
-            val email = binding.emailTI.text.toString().trim()
-            val pass = binding.passwordTI.text.toString().trim()
-
-            if(email.isNotEmpty() && pass.isNotEmpty()){
-
-                    auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(
-                        OnCompleteListener {
-                            if (it.isSuccessful) {
-                                Toast.makeText(context, "Signin Successful", Toast.LENGTH_SHORT)
-                                    .show()
-                                navControl.navigate(R.id.action_signInFragment_to_homeScreenFragment)
-                            } else {
-                                Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT)
-                                    .show()
-                            }
-                        }
-                    )
-                }
-            }
-        }
     }
+}
 

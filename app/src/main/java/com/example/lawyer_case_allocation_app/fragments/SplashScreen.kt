@@ -29,15 +29,11 @@ class SplashScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        auth = FirebaseAuth.getInstance()
+//        auth = FirebaseAuth.getInstance()
         navController = Navigation.findNavController(view)
 
         Handler(Looper.myLooper()!!).postDelayed(Runnable {
-            if(auth.currentUser != null){
-                navController.navigate(R.id.action_splashScreen_to_homeScreenFragment)
-            }else{
-                navController.navigate(R.id.action_splashScreen_to_signInFragment)
-            }
+                navController.navigate(R.id.action_splashScreen_to_signUpFragment)
         }, 2000)
     }
 }
