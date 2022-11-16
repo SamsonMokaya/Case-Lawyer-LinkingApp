@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47894959608",
+    "project_id": "wakiliapp-21b01",
+    "storage_bucket": "wakiliapp-21b01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47894959608:android:26619cd67a14a9632b720d",
+        "android_client_info": {
+          "package_name": "com.example.wakiliapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47894959608-bonglbjpulligcuhim8t48adpuvi3dua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChuiqJ5LXibb7UhkOJcDoxc8bDVPqOgPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47894959608-bonglbjpulligcuhim8t48adpuvi3dua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
