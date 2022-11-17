@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "47894959608-v2s3lvehbqe3c8launtjri2lhk20tnil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wakiliapp",
+            "certificate_hash": "1d0c2f764b0b2f7f348f03431b59b1b0edb292df"
+          }
+        },
+        {
           "client_id": "47894959608-bonglbjpulligcuhim8t48adpuvi3dua.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "47894959608-bonglbjpulligcuhim8t48adpuvi3dua.apps.googleusercontent.com",
+              "client_id": "47894959608-b6rfbn3m7q7bgf9qee5fll7lum6hp3uv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

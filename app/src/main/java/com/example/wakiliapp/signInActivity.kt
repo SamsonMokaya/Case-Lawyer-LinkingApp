@@ -17,9 +17,6 @@ class signInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-
-
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding = ActivitySignInBinding.inflate(layoutInflater)
@@ -29,6 +26,7 @@ class signInActivity : AppCompatActivity() {
             val intent = Intent(this, signUpActivity::class.java)
             startActivity(intent)
         }
+
 
         binding.button.setOnClickListener{
             val email = binding.email.text.toString()
