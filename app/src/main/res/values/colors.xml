@@ -11,7 +11,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="secondary_color">#FFFFFFFF</color>
     <color name="blue">#FF0000FF</color>4169E1
+    <color name="textColor">#CACFCE</color>4169E1
     <color name="blue1">#FF4169E1</color>
-    <color name="grey2">#595A5A</color>
+    <color name="grey2">#454646</color>
     <color name="grey">#FFFFFF</color>
 </resources>

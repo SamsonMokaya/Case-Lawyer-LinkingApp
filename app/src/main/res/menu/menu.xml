@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/cases"
+        android:icon="@drawable/case_study__5_"
+        android:title="My Cases"/>
+
+    <item
+        android:id="@+id/lawyers"
+        android:icon="@drawable/lawyer"
+        android:title="Lawyers"/>
+
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="History"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+
+    <item
+        android:title="Miscellaneous">
+
+        <menu>
+
+            <item
+                android:id="@+id/rateus"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Rate Us"
+                />
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share"
+
+                />
+
+
+        </menu>
+
+    </item>
+
+
+
+
+
+
+</menu>
