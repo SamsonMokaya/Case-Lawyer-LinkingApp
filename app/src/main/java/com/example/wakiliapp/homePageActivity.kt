@@ -27,7 +27,7 @@ class homePageActivity : AppCompatActivity() {
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
             navView.setNavigationItemSelectedListener {
                 when (it.itemId){
-                    R.id.home -> {Toast.makeText(this@homePageActivity,"Home Selected", Toast.LENGTH_SHORT).show()}
+                    R.id.home -> {Toast.makeText(this@homePageActivity,"Home Selected again", Toast.LENGTH_SHORT).show()}
                     R.id.settings -> {Toast.makeText(this@homePageActivity,"Settings Selected", Toast.LENGTH_SHORT).show()}
                     R.id.profile -> Toast.makeText(this@homePageActivity,"profile Selected", Toast.LENGTH_SHORT).show()
                     R.id.cases -> Toast.makeText(this@homePageActivity,"Cases Selected", Toast.LENGTH_SHORT).show()
