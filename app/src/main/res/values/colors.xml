@@ -13,6 +13,7 @@
     <color name="blue">#FF0000FF</color>4169E1
     <color name="textColor">#CACFCE</color>4169E1
     <color name="blue1">#FF4169E1</color>
+    <color name="blue3">#213A85</color>
     <color name="grey2">#454646</color>
-    <color name="grey">#FFFFFF</color>
+    <color name="grey">#EBEDED</color>
 </resources>

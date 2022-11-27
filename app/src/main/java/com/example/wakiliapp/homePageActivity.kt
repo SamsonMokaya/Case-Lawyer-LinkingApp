@@ -1,5 +1,6 @@
 package com.example.wakiliapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -27,24 +28,47 @@ class homePageActivity : AppCompatActivity() {
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
             navView.setNavigationItemSelectedListener {
                 when (it.itemId){
-                    R.id.home -> {Toast.makeText(this@homePageActivity,"Home Selected again", Toast.LENGTH_SHORT).show()}
-                    R.id.settings -> {Toast.makeText(this@homePageActivity,"Settings Selected", Toast.LENGTH_SHORT).show()}
-                    R.id.profile -> Toast.makeText(this@homePageActivity,"profile Selected", Toast.LENGTH_SHORT).show()
-                    R.id.cases -> Toast.makeText(this@homePageActivity,"Cases Selected", Toast.LENGTH_SHORT).show()
-                    R.id.profile -> Toast.makeText(this@homePageActivity,"Profile Selected", Toast.LENGTH_SHORT).show()
-                    R.id.history -> Toast.makeText(this@homePageActivity,"History Selected", Toast.LENGTH_SHORT).show()
-                    R.id.rateus -> Toast.makeText(this@homePageActivity,"RateUs Selected", Toast.LENGTH_SHORT).show()
-                    R.id.share -> Toast.makeText(this@homePageActivity,"Share Selected", Toast.LENGTH_SHORT).show()
+                    R.id.home -> {menuNavigator("home")}
+                    R.id.settings -> {menuNavigator("settings")}
+                    R.id.profile -> {menuNavigator(name = "profile") }
+                    R.id.cases -> menuNavigator("cases")
+                    R.id.profile -> menuNavigator("profile")
+                    R.id.history -> menuNavigator("history")
+                    R.id.rateus -> menuNavigator("rateus")
+                    R.id.share -> menuNavigator("share")
                 }
                 true
             }
         }
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toggle.onOptionsItemSelected(item)){
-            true
+    fun menuNavigator(name: String){
+
+        if(name == "profile"){
+            val intent = Intent(this, profileActivity::class.java)
+            startActivity(intent)
         }
-        return super.onOptionsItemSelected(item)
+        else{
+            val intent = Intent(this, homePageActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        var id = item.itemId
+//
+//
+//        if(toggle.onOptionsItemSelected(item)){
+//
+//            if(item.itemId == R.id.profile){
+//                val intent = Intent(this, profileActivity::class.java)
+//                startActivity(intent)
+//
+//                return true
+//            }
+//            true
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 }
