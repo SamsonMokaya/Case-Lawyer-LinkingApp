@@ -37,15 +37,26 @@ class signInActivity : AppCompatActivity() {
             val pass= binding.passwordTI.text.toString()
 
             if(email.isNotEmpty() or pass.isNotEmpty()){
-                firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
-                    if(it.isSuccessful){
-                        val intent = Intent(this,homePageActivity::class.java)
-                        startActivity(intent)
-                    }else{
-                        Toast.makeText(this,"Incorrect username or password", Toast.LENGTH_SHORT).show()
+                if(email== getString(R.string.admin_email) && pass== getString(R.string.admin_password)){
+                    val intent= Intent(this, AdminHomeActivity::class.java)
+                    startActivity(intent)
+                }
+                else {
+                    firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, homePageActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(
+                                this,
+                                "Incorrect username or password",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
                     }
                 }
-            }else{
+            }
+            else{
                 Toast.makeText(this,"Empty fields are prohibited", Toast.LENGTH_SHORT).show()
             }
         }

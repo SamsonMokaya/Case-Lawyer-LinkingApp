@@ -63,7 +63,7 @@
                         android:id="@+id/welcomeText"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Welcome back Samson!"
+                        android:text="Welcome back Admin!"
                         android:textAlignment="center"
                         android:textColor="@color/grey2"
                         android:textSize="20dp"
@@ -138,7 +138,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20sp"
                                 android:fontFamily="sans-serif-thin"
-                                android:text="MY CASES"
+                                android:text="TRACK CASES"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -172,7 +172,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20sp"
                                 android:fontFamily="sans-serif-thin"
-                                android:text="NEW CASE"
+                                android:text="PLAINTIFF DETAILS"
+                                android:textAlignment="center"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -205,7 +206,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20sp"
                                 android:fontFamily="sans-serif-thin"
-                                android:text="LAWYERS"
+                                android:text="LAWYERS DETAILS"
+                                android:textAlignment="center"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -222,13 +224,11 @@
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:id="@+id/navView"
+        android:id="@+id/navViewAdmin"
         android:layout_height="match_parent"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu"
+        app:menu="@menu/menu_admin"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
