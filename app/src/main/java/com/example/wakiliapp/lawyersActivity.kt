@@ -1,5 +1,6 @@
 package com.example.wakiliapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.wakiliapp.databinding.ActivityLawyersBinding
@@ -54,7 +55,12 @@ class lawyersActivity : AppCompatActivity() {
             val country = country[position]
             val imageId = imageId[position]
 
-           // val i = Intent
+            val i = Intent(this, lawyerProfile::class.java)
+            i.putExtra("name", name)
+            i.putExtra("phone", phone)
+            i.putExtra("country", country)
+            i.putExtra("imageId", imageId)
+            startActivity(i)
         }
 
     }
