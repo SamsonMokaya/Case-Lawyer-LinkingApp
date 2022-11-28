@@ -41,6 +41,11 @@ class homePageActivity : AppCompatActivity() {
                 true
             }
         }
+
+        binding.registerCase.setOnClickListener{
+            val intent = Intent(this, registerCaseActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun menuNavigator(name: String){

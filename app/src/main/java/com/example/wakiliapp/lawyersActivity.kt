@@ -22,12 +22,12 @@ class lawyersActivity : AppCompatActivity() {
 
         val name= arrayOf(
             "Samson Mokaya", "Charity Makhanu", "Salomon Kulondwa", "Constance Kithei",
-            "Samson Mokaya", "Charity Makhanu", "Salomon Kulondwa", "Constance Kithei",
+            "Abigael Kirwa", "Jerald Nyaga", "Calvin Njeru", "Daniel machanje",
         )
 
         val email = arrayOf(
             "samson@gmail.com","charity@gmail.com","salomon@gmail.com","constance@gmail.com",
-            "samson@gmail.com","charity@gmail.com","salomon@gmail.com","constance@gmail.com"
+            "abgael@gmail.com","jerald@gmail.com","calvin@gmail.com","daniel@gmail.com"
         )
 
         val phoneNo = arrayOf(
