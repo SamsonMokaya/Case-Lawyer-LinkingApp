@@ -29,6 +29,7 @@ class homePageActivity : AppCompatActivity() {
             navView.setNavigationItemSelectedListener {
                 when (it.itemId){
                     R.id.home -> {menuNavigator("home")}
+                    R.id.lawyers -> {menuNavigator("lawyers")}
                     R.id.settings -> {menuNavigator("settings")}
                     R.id.profile -> {menuNavigator(name = "profile") }
                     R.id.cases -> menuNavigator("cases")
@@ -48,27 +49,21 @@ class homePageActivity : AppCompatActivity() {
             val intent = Intent(this, profileActivity::class.java)
             startActivity(intent)
         }
-        else{
-            val intent = Intent(this, homePageActivity::class.java)
+        if(name == "lawyers"){
+            val intent = Intent(this, lawyersActivity::class.java)
             startActivity(intent)
         }
+//        else{
+//            val intent = Intent(this, homePageActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
 
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        var id = item.itemId
-//
-//
-//        if(toggle.onOptionsItemSelected(item)){
-//
-//            if(item.itemId == R.id.profile){
-//                val intent = Intent(this, profileActivity::class.java)
-//                startActivity(intent)
-//
-//                return true
-//            }
-//            true
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(toggle.onOptionsItemSelected(item)){
+            true
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

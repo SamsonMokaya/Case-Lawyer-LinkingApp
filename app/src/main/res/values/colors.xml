@@ -10,10 +10,12 @@
     <color name="black2">#FF353935</color>
     <color name="white">#FFFFFFFF</color>
     <color name="secondary_color">#FFFFFFFF</color>
+    <color name="underline">#D8D6D6</color>
     <color name="blue">#FF0000FF</color>4169E1
     <color name="textColor">#CACFCE</color>4169E1
     <color name="blue1">#FF4169E1</color>
     <color name="blue3">#213A85</color>
     <color name="grey2">#454646</color>
+    <color name="grey3">#454646</color>
     <color name="grey">#EBEDED</color>
 </resources>
