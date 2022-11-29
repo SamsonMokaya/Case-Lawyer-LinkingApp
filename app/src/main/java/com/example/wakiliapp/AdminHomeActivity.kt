@@ -43,8 +43,6 @@ class AdminHomeActivity : AppCompatActivity() {
                         menuNavigator(name = "profile")
                     }
                     R.id.cases -> menuNavigator("cases")
-                    R.id.profile -> menuNavigator("profile")
-                    R.id.history -> menuNavigator("history")
                 }
                 true
             }
