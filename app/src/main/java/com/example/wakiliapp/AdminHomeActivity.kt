@@ -45,8 +45,6 @@ class AdminHomeActivity : AppCompatActivity() {
                     R.id.cases -> menuNavigator("cases")
                     R.id.profile -> menuNavigator("profile")
                     R.id.history -> menuNavigator("history")
-                    R.id.rateus -> menuNavigator("rateus")
-                    R.id.share -> menuNavigator("share")
                 }
                 true
             }
@@ -56,11 +54,11 @@ class AdminHomeActivity : AppCompatActivity() {
     fun menuNavigator(name: String){
 
         if(name == "profile"){
-            val intent = Intent(this, profileActivity::class.java)
+            val intent = Intent(this, AdminHomeActivity::class.java)
             startActivity(intent)
         }
         if(name == "lawyers"){
-            val intent = Intent(this, lawyersActivity::class.java)
+            val intent = Intent(this, AdminHomeActivity::class.java)
             startActivity(intent)
         }
     }
