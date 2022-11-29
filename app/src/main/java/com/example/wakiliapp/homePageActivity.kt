@@ -58,6 +58,10 @@ class homePageActivity : AppCompatActivity() {
             val intent = Intent(this, lawyersActivity::class.java)
             startActivity(intent)
         }
+        if(name == "home"){
+            val intent = Intent(this, homePageActivity::class.java)
+            startActivity(intent)
+        }
 //        else{
 //            val intent = Intent(this, homePageActivity::class.java)
 //            startActivity(intent)
